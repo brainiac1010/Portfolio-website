@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #b208d4;
+    color: #ff4321;
     font-weight: 500;
 }
 
@@ -54,14 +54,15 @@ nav ul li a:hover {
 }
 
 span {
-    color: #b208d4;
+    color: #ff4321;
 }
-.info p{
+
+.info p {
     color: #606163;
     line-height: 22px;
 }
 
-.info a{
+.info a {
     background: #212121;
     padding: 10px 18px;
     text-decoration: none;
@@ -69,4 +70,47 @@ span {
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
+}
+
+.info a:hover {
+    background-color: #ff4321;
+}
+
+.img-box {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.img-box img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img {
+    bottom: 40px;
+}
+
+.img-box:hover .main-img {
+
+    left: 54%;
+}
+.social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+.social-links a{
+    font-size: 30px;
+    color: #606163;
+    margin-left: 20px;
+}
+
+.social-links a:hover {
+    color: #ff4321;
 }
