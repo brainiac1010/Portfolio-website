@@ -8,15 +8,28 @@
     cursor: pointer;
 
 }
-nav ul{
+
+nav ul {
     flex: 1;
     text-align: right;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondry-color: #212121;
+
+
+}
+
+.dark-them {
+    --primary-color: rgb(9, 9, 59);
+    --secondry-color: #fff;
 }
 
 .hero {
     height: 100vh;
     width: 100%;
-    background: #edf2fc;
+    background: var(--primary-color);
     font-family: sans-serif;
     position: relative;
 }
@@ -43,7 +56,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #606163;
+    color: var(--secondry-color);
 
 }
 
@@ -59,7 +72,7 @@ nav ul li a:hover {
 
 .info h1 {
     font-size: 70px;
-    color: #212121;
+    color: var(--secondry-color);
     margin-bottom: 20px;
 }
 
@@ -68,15 +81,15 @@ span {
 }
 
 .info p {
-    color: #606163;
+    color: var(--secondry-color);
     line-height: 22px;
 }
 
 .info a {
-    background: #212121;
+    background: var(--secondry-color);
     padding: 10px 18px;
     text-decoration: none;
-    color: #fff;
+    color: var(--primary-color);
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
@@ -119,7 +132,7 @@ span {
 
 .social-links a {
     font-size: 30px;
-    color: #606163;
+    color: var(--secondry-color);
     margin-left: 20px;
 }
 
